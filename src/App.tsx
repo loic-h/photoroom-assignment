@@ -1,4 +1,5 @@
 import data from "./data.json";
+import { SectionTitle, EditorialCard } from "./components";
 
 function App() {
 
@@ -8,54 +9,30 @@ function App() {
   return (
     <div>
       <section>
-        <div>
-          <h2>My favorites</h2>
-          <p>Lorem Ipsum dolor sit amet consectetur.</p>
-        </div>
+        <SectionTitle headline="My favorites" subheadline="Lorem Ipsum dolor sit amet consectetur." />
         <div>
           {favorites.map(item => (
-            <div key={item.id}>
-              <div>
-                <img src={item.imageSrc} alt="" />
-              </div>
-              <div>
-                <div>
-                  <h4>Category</h4>
-                  <h3>{item.title}</h3>
-                  <p>{item.subtitle}</p>
-                </div>
-                <div>
-                  <img src={item.author.avatarSrc} alt="" />
-                  <h5>{item.author.name}</h5>
-                </div>
-              </div>
-            </div>
+            <EditorialCard
+              key={item.id}
+              imageSrc={item.imageSrc}
+              headline={item.title}
+              subheadline={item.subtitle}
+              authorAvatarSrc={item.author.avatarSrc}
+              authorName={item.author.name} />
           ))}
         </div>
       </section>
       <section>
-        <div>
-          <h2>My designs</h2>
-          <p>Lorem Ipsum dolor sit amet consectetur.</p>
-        </div>
+        <SectionTitle headline="My designs" subheadline="Lorem Ipsum dolor sit amet consectetur." />
         <div>
           {designs.map(item => (
-            <div key={item.id}>
-              <div>
-                <img src={item.imageSrc} alt="" />
-              </div>
-              <div>
-                <div>
-                  <h4>Category</h4>
-                  <h3>{item.title}</h3>
-                  <p>{item.subtitle}</p>
-                </div>
-                <div>
-                  <img src={item.author.avatarSrc} alt="" />
-                  <h5>{item.author.name}</h5>
-                </div>
-              </div>
-            </div>
+            <EditorialCard
+              key={item.id}
+              imageSrc={item.imageSrc}
+              headline={item.title}
+              subheadline={item.subtitle}
+              authorAvatarSrc={item.author.avatarSrc}
+              authorName={item.author.name} />
           ))}
         </div>
       </section>
