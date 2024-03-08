@@ -21,7 +21,8 @@ function App() {
                 headline={item.title}
                 subheadline={item.subtitle}
                 authorAvatarSrc={item.author.avatarSrc}
-                authorName={item.author.name} />
+                authorName={item.author.name}
+                direction="horizontal" />
             ))}
           </div>
           <Spacer size="i600" />

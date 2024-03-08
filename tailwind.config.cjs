@@ -37,10 +37,6 @@ module.exports = {
         lineHeight: "150%",
         fontWeight: "500",
       }],
-      "comp-semi-400": ["12px", {
-        lineHeight: "130%",
-        fontWeight: "600",
-      }],
       "comp-500": ["14px", {
         lineHeight: "130%",
         fontWeight: "500",
@@ -48,6 +44,14 @@ module.exports = {
       "comp-600": ["17px", {
         lineHeight: "130%",
         fontWeight: "500",
+      }],
+      "comp-semi-400": ["12px", {
+        lineHeight: "130%",
+        fontWeight: "600",
+      }],
+      "comp-semi-900": ["29px", {
+        lineHeight: "130%",
+        fontWeight: "600",
       }],
       "head-1000": ["50px", {
         lineHeight: "110%",
