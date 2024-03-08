@@ -98,6 +98,7 @@ favorite option and visibility (public, private), and the visual change is refle
 4. [To Do] As a user, I can toggle dark/light theme mode
 
 I focused on delivering a usable app with reusable components and foundations.
+I took 10 minutes at the end of the assignment to try to make the page available in github pages but lacked the time to manage it.
 
 What I would improve if given the time:
 - Add proper typing, especially for component API to help consumption
