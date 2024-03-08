@@ -9,7 +9,7 @@ const EditorialCard = ({
 }) => {
 
   return (
-    <div>
+    <div className="flex flex-col">
       <div>
         <img src={imageSrc} alt="" />
       </div>
