@@ -28,7 +28,7 @@ function App() {
       <section>
         <SectionTitle headline="My designs" subheadline="Lorem Ipsum dolor sit amet consectetur." />
         <Spacer size="i500" />
-        <div>
+        <div className="grid gap-300 grid-cols-3">
           {designs.map(item => (
             <EditorialCard
               key={item.id}
