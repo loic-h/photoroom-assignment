@@ -16,7 +16,7 @@ const map = {
 }
 
 const Spacer = ({
-  size
+  size = "500"
 }) => {
   const styles = map[size];
   return (
