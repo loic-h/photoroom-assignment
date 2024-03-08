@@ -7,8 +7,8 @@ const SectionTitle = ({
 
   return (
     <div className="text-center">
-      <h2 className="text-strong-2000">{headline}</h2>
-      <p className="text-700">{subheadline}</p>
+      <h2 className="text-head-1000">{headline}</h2>
+      <p className="text-body-700 text-content-secondary">{subheadline}</p>
     </div>
   );
 };

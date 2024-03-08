@@ -5,7 +5,12 @@ import plugin from "tailwindcss/plugin";
 module.exports = {
   content: ["./index.html", "./src/**/*.{html,ts,tsx}"],
   theme: {
-    extend: {},
+    colors: {
+      content: {
+        primary: "#000000",
+        secondary: "#707177"
+      }
+    },
     spacing: {
       200: '16px',
       250: '20px',
@@ -22,11 +27,11 @@ module.exports = {
       800: '64px',
     },
     fontSize: {
-      700: ["20px", {
+      "body-700": ["20px", {
         lineHeight: "150%",
         fontWeight: "500",
       }],
-      "strong-2000": ["50px", {
+      "head-1000": ["50px", {
         lineHeight: "110%",
         fontWeight: "700",
         letterSpacing: "-0.5px"

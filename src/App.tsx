@@ -7,7 +7,7 @@ function App() {
   const favorites = designs.filter(item => item.isFavorite);
 
   return (
-    <div>
+    <div className="text-content-primary">
       <Spacer size="500" />
       <section>
         <SectionTitle headline="My favorites" subheadline="Lorem Ipsum dolor sit amet consectetur." />
