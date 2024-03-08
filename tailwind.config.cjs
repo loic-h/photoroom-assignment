@@ -6,6 +6,21 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{html,ts,tsx}"],
   theme: {
     extend: {},
+    spacing: {
+      200: '16px',
+      250: '20px',
+      300: '24px',
+      350: '28px',
+      400: '32px',
+      450: '36px',
+      500: '40px',
+      550: '44px',
+      600: '48px',
+      650: '52px',
+      700: '56px',
+      750: '60px',
+      800: '64px',
+    }
   },
   plugins: [
     require("@tailwindcss/container-queries"),

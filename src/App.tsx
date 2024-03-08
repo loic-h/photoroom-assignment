@@ -1,5 +1,5 @@
 import data from "./data.json";
-import { SectionTitle, EditorialCard } from "./components";
+import { SectionTitle, EditorialCard, Spacer } from "./components";
 
 function App() {
 
@@ -8,8 +8,10 @@ function App() {
 
   return (
     <div>
+      <Spacer size="500" />
       <section>
         <SectionTitle headline="My favorites" subheadline="Lorem Ipsum dolor sit amet consectetur." />
+        <Spacer size="i500" />
         <div>
           {favorites.map(item => (
             <EditorialCard
@@ -21,9 +23,11 @@ function App() {
               authorName={item.author.name} />
           ))}
         </div>
+        <Spacer size="i600" />
       </section>
       <section>
         <SectionTitle headline="My designs" subheadline="Lorem Ipsum dolor sit amet consectetur." />
+        <Spacer size="i500" />
         <div>
           {designs.map(item => (
             <EditorialCard
@@ -36,6 +40,7 @@ function App() {
           ))}
         </div>
       </section>
+      <Spacer size="500" />
     </div>
   );
 }
