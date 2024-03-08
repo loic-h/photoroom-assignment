@@ -20,6 +20,17 @@ module.exports = {
       700: '56px',
       750: '60px',
       800: '64px',
+    },
+    fontSize: {
+      700: ["20px", {
+        lineHeight: "150%",
+        fontWeight: "500",
+      }],
+      "strong-2000": ["50px", {
+        lineHeight: "110%",
+        fontWeight: "700",
+        letterSpacing: "-0.5px"
+      }]
     }
   },
   plugins: [
